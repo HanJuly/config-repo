@@ -10,12 +10,12 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:8500/eureka/
 
-spring:
-  rabbitmq:
-    host: 192.168.48.128
-    port: 5672
-    password: guest
-    username: guest
+#spring:
+#  rabbitmq:
+#    host: 192.168.48.128
+#    port: 5672
+#    password: guest
+#    username: guest
 
 feign:
   hystrix:
