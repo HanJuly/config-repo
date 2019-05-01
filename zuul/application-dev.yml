@@ -14,7 +14,7 @@ zuul:
   routes:
     api-a:
       path: /api-a/**
-    serviceId: hello-provide
+    serviceId: HELLO-PROVIDE
   SendErrorFilter:
     error:
       disable: true
