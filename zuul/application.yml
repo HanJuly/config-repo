@@ -1,0 +1,35 @@
+
+prod1:
+  eureka:
+    server:
+      port: 6501
+    hostname: apigate.hw.com
+dev:
+  eureka:
+    server:
+      port: 6503
+    hostname: 127.0.0.1
+
+# 公共配置
+spring:
+  profiles:
+    active: dev
+  application:
+    name: api-gateway
+
+
+management:
+  context-path: /api-gateway
+#  endpoints:
+#    web:
+#      exposure:
+#        include: *
+
+
+info:
+  artifact: api-gateway
+  name: '@project.name@'
+  description: '@project.description@'
+  version: '@project.version@'
+  spring-boot-version: '@spring.boot.version@'
+  spring-cloud-version: '@spring.cloud.version@'
