@@ -1,0 +1,34 @@
+prod1:
+  eureka:
+    server:
+      port: 9502
+    hostname: eureka1.hw.com
+dev:
+  eureka:
+    server:
+      port: 9501
+    hostname: 127.0.0.1
+
+# 公共配置
+spring:
+  profiles:
+    active: dev
+  application:
+    name: hello-service
+
+
+management:
+  context-path: /hello-service
+#  endpoints:
+#    web:
+#      exposure:
+#        include: *
+
+
+info:
+  artifact: hello-service
+  name: '@project.name@'
+  description: '@project.description@'
+  version: '@project.version@'
+  spring-boot-version: '@spring.boot.version@'
+  spring-cloud-version: '@spring.cloud.version@'
