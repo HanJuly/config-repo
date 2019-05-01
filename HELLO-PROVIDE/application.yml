@@ -6,7 +6,7 @@ prod1:
 dev:
   eureka:
     server:
-      port: 9501
+      port: 9502
     hostname: 127.0.0.1
 
 # 公共配置
