@@ -9,6 +9,18 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:8500/eureka/
+zuul:
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
 
 spring:
   rabbitmq:

@@ -18,7 +18,7 @@ spring:
 
 
 management:
-  context-path: /hello-service
+  context-path: /HELLO-PROVIDE
 #  endpoints:
 #    web:
 #      exposure:
@@ -26,7 +26,7 @@ management:
 
 
 info:
-  artifact: hello-service
+  artifact: HELLO-PROVIDE
   name: '@project.name@'
   description: '@project.description@'
   version: '@project.version@'
