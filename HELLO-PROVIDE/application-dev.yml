@@ -22,4 +22,3 @@ feign:
     enabled: true
 ribbon:
   NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
-5
