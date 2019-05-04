@@ -14,7 +14,8 @@ eureka:
 spring:
   rabbitmq:
     host: 192.168.124.128
-    port: 5672
+    #nginx端口，也可以是rabbit的
+    port: 8081
     password: guest
     username: guest
 
