@@ -11,9 +11,15 @@ eureka:
       defaultZone: http://127.0.0.1:8500/eureka/
 
 
+#spring:
+#  rabbitmq:
+#    addresses: 192.168.124.128:5672,192.168.124.128:5673,192.168.124.128:5674
+#    password: guest
+#    username: guest
+
 spring:
   rabbitmq:
-    addresses: 192.168.124.128:5672,192.168.124.128:5673,192.168.124.128:5674
+    addresses: 192.168.124.128:2222
     password: guest
     username: guest
 
