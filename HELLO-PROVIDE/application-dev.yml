@@ -23,7 +23,7 @@ spring:
     password: guest
     username: guest
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/hello-test?useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/hello-test?useSSL=false&characterEncoding=utf8&serverTimezone=UTC
     username: root
     password: mysql
     driver-class-name: com.mysql.jdbc.Driver
