@@ -22,8 +22,21 @@ spring:
     addresses: 192.168.124.128:2222
     password: guest
     username: guest
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/hello-test?useSSL=false
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.jdbc.Driver
+    max-idle: 10
+    max-wait: 1000
+    min-idle: 5
+    initial-size:  5
 
-feign:
+mybatis:
+  typeAliasesPackage: com.han.helloservice.pojo
+  mapperLocations: classpath:mapper/UserMapper.xml
+
+feign:s
   hystrix:
     enabled: true
 ribbon:
