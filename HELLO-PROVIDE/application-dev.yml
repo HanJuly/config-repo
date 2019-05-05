@@ -36,7 +36,7 @@ mybatis:
   typeAliasesPackage: com.han.helloservice.pojo
   mapperLocations: classpath:mapper/UserMapper.xml
 
-feign:s
+feign:
   hystrix:
     enabled: true
 ribbon:
