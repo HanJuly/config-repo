@@ -6,6 +6,9 @@ eureka:
     status-page-url-path: ${management.context-path}/info
     health-check-url-path: ${management.context-path}/health
     prefer-ip-address: true
+    metadata-map:
+        version: v1
+        my-metadata: v1
   client:
     service-url:
       defaultZone: http://127.0.0.1:8500/eureka/
@@ -26,7 +29,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/hello-test?useSSL=false&characterEncoding=utf8&serverTimezone=UTC
     username: root
     password: mysql
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver #这个配置貌似是无效的，自动去找了
     max-idle: 10
     max-wait: 1000
     min-idle: 5
