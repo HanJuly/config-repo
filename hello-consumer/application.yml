@@ -19,14 +19,17 @@ spring:
 
 management:
   context-path: /hello-consumer
-#  endpoints:
-#    web:
-#      exposure:
-#        include: *
+  endpoints:
+    web:
+      exposure:
+        include: *
+  endpoint:
+    health:
+      show-details: ALWAYS
 
 
 info:
-  artifact: config-server
+  artifact: hello-consumer
   name: '@project.name@'
   description: '@project.description@'
   version: '@project.version@'
