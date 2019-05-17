@@ -18,12 +18,13 @@ spring:
 
 
 management:
-  context-path: /HELLO-PROVIDE
-#  endpoints:
-#    web:
-#      exposure:
-#        include: *
-
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
 
 info:
   artifact: HELLO-PROVIDE
