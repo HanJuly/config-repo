@@ -18,7 +18,6 @@ spring:
 
 
 management:
-  context-path: /hello-consumer
   endpoints:
     web:
       exposure:
