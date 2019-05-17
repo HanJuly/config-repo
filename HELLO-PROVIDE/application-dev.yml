@@ -25,6 +25,10 @@ spring:
     addresses: 192.168.124.129:5672
     password: guest
     username: guest
+  redis:
+    host: 192.168.124.129
+    port: 6379
+    timeout: 20000
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/hello-test?useSSL=false&characterEncoding=utf8&serverTimezone=UTC
     username: root
