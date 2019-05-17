@@ -3,12 +3,12 @@ server:
 
 eureka:
   instance:
-    status-page-url-path: ${management.context-path}/info
-    health-check-url-path: ${management.context-path}/health
+    leaseRenewalIntervalInSeconds: 10
     prefer-ip-address: true
     metadata-map:
-        version: v1
-        my-metadata: v1
+      version: v1
+      my-metadata: v1
+      startup: ${random.int}    #needed to trigger info and endpoint update after restart
   client:
     service-url:
       defaultZone: http://127.0.0.1:8500/eureka/
@@ -34,7 +34,10 @@ spring:
     max-wait: 1000
     min-idle: 5
     initial-size:  5
-
+  boot:
+    admin:
+      client:
+        url: http://localhost:3333
 mybatis:
   typeAliasesPackage: com.han.helloservice.pojo
   mapperLocations: classpath:mapper/UserMapper.xml
