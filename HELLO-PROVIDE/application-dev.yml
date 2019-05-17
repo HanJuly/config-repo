@@ -22,7 +22,7 @@ eureka:
 
 spring:
   rabbitmq:
-    addresses: 192.168.124.128:2222
+    addresses: 192.168.124.129:5672
     password: guest
     username: guest
   datasource:
