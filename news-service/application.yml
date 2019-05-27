@@ -1,0 +1,35 @@
+prod1:
+  eureka:
+    server:
+      port: 9503
+    hostname: eureka1.wh.com
+dev:
+  eureka:
+    server:
+      port: 9503
+    hostname: 127.0.0.1
+
+# 公共配置
+spring:
+  profiles:
+    active: dev
+  application:
+    name: News-Service
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+info:
+  artifact: News-Service
+  name: '@project.name@'
+  description: '@project.description@'
+  version: '@project.version@'
+  spring-boot-version: '@spring.boot.version@'
+  spring-cloud-version: '@spring.cloud.version@'
