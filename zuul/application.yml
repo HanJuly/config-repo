@@ -20,10 +20,10 @@ spring:
     host: 47.102.115.83
     port: 6379
     timeout: 20000
-#    cluster:
-#      nodes: 47.102.115.83:6380,47.102.115.83:6381,47.102.115.83:6382,47.102.115.83:6383,47.102.115.83:6384
-#      maxRedirects: 6
-#    fail-fast: true
+    cluster:
+      nodes: 47.102.115.83:6380,47.102.115.83:6381,47.102.115.83:6382,47.102.115.83:6383,47.102.115.83:6384
+      maxRedirects: 6
+    fail-fast: true
   pool:
     max-active: 8
     min-idle: 0
