@@ -8,7 +8,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: https://cas.com:8500/eureka/
+      defaultZone: http://127.0.0.1:8500/eureka/
 #ribbon.eureka.enabled=true
 zuul:
   routes:
