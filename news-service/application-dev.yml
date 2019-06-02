@@ -47,7 +47,6 @@ spring:
     max-wait: 1000
     min-idle: 5
     initial-size:  5
-    1
   boot:
     admin:
       client:
