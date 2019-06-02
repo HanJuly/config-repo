@@ -7,7 +7,7 @@ dev:
   eureka:
     server:
       port: 9503
-    hostname: 127.0.0.1
+    hostname: cas.com
 
 # 公共配置
 spring:
