@@ -42,7 +42,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/news-service?useSSL=false&characterEncoding=utf8&serverTimezone=UTC
     username: root
     password: mysql
-    driver-class-name: com.mysql.jdbc.Driver #这个配置貌似是无效的，自动去找了
+    driver-class-name: com.mysql.cj.jdbc.Driver
     max-idle: 10
     max-wait: 1000
     min-idle: 5
