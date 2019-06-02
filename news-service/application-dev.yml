@@ -11,7 +11,7 @@ eureka:
       startup: ${random.int}    #needed to trigger info and endpoint update after restart
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8500/eureka/
+      defaultZone: http://cas.com:8500/eureka/
 
 
 #spring:
