@@ -23,7 +23,7 @@ spring:
     host: 47.102.115.83
     port: 9999
     timeout: 20000
-    fail-fast: true
+    password: redis
 #  redis:
 #    host: 47.102.115.83
 #    port: 6379
